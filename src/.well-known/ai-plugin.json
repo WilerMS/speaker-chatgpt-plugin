@@ -1,1 +1,19 @@
-
+{
+  "schema_version": "v1",
+  "name_for_model": "act-like-speaker",
+  "name_for_human": "Act like speaker plugin",
+  "description_for_model": "Plugin to give chatgpt the ability to say with different voices its responses.",
+  "description_for_human": "What do you want me to say?",
+  "auth": {
+    "type": "user_http",
+    "authorization_type": "bearer"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "http://localhost:3000/openapi.yaml",
+    "has_user_authentication": false
+  },
+  "logo_url": "http://localhost:3000/logo.png",
+  "contact_email": "wilersoriano@gmail.com", 
+  "legal_info_url": "http://localhost:3000/legal-info"
+}
